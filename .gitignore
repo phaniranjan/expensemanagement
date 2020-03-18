@@ -24,6 +24,4 @@ hs_err_pid*
 /target/
 
 #Project Files #
-.project
-.classpath
 .settings/
