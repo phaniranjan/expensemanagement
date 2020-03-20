@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public final class NewsPaperData {
-
+    // data is stored currently here but can be fecthed or written to DB or any backend.
 	final double newsPaperCost[][] = { { 3.0, 3.0, 3.0, 3.0, 3.0, 5.0, 6.0 }, { 2.5, 2.5, 2.5, 2.5, 2.5, 4.0, 4.0 },
 			{ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 10 }, { 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 },
 			{ 2.0, 2.0, 2.0, 2.0, 2.0, 4.0, 4.0 } };
@@ -26,6 +26,7 @@ public final class NewsPaperData {
 		populateDaysOfCurrentMonthCount();
 	}
 
+	// Function calculates monthly paper bill based on the subscription rate for each day.
 	public double calculateCurrentMonthlyExpense(String paperType) {
 
 		double monthTotalBillNewsPaper = 0.0;
@@ -38,6 +39,8 @@ public final class NewsPaperData {
 		return monthTotalBillNewsPaper;
 	}
 
+	// Calculates number of days based on the current month.
+	// Can also be modified with weekdays/sundays/saturdays as per commonolity from the code.
 	private void populateDaysOfCurrentMonthCount() {
 		int monthDays = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
 		calendar.set(Calendar.DAY_OF_MONTH, 1);
