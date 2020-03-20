@@ -29,3 +29,27 @@ varying frequency (Daily, Weekly, BiWeekly etc). e.g. we add milk under Dairy Ca
 with a daily frequency, any magazine under Books Category with a weekly frequency
 etc. The solution that you submit should be easily extendible to add new items under
 different categories at given frequency to arrive at total subscription cost.
+
+
+Sample Output 
+
+Household Expenses for current month :March
+
+Monthly household expesne details for Jishnu
+Bill for TOI monthly subscription :113.0
+Bill for ET monthly subscription :94.0
+Bill for BM monthly subscription :46.5
+Total monthly bill :253.5
+
+Monthly household expesne details for Jignesh
+Bill for TOI monthly subscription :113.0
+Bill for Hindu monthly subscription :89.5
+Total monthly bill :202.5
+
+Monthly household expesne details for Kishore
+Bill for TOI monthly subscription :113.0
+Bill for ET monthly subscription :94.0
+Bill for BM monthly subscription :46.5
+Bill for Hindu monthly subscription :89.5
+Bill for HT monthly subscription :78.0
+Total monthly bill :421.0
